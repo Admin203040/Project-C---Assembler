@@ -2,7 +2,29 @@
                                                      ---  Instructions ---
 
 
-  Hardware of the pc:
-  
+  Hardware of the PC:
+    CPU - 
+      Register -
+     
+      Description: Units of memory built in CPU 
+      Size in bits: 32 (4 bytes) 
+      Number of units: 32 
+      Range: 0 - 31 
+      Code name: $ . Ex: Register number 1 = $1
+      Byte Order: Little Endian (reg 31 most Significant) 
+    
+    RAM - 
+      Description: Memory slot on the motherboard 
+      Size in bit: 8 bits (1 byte)
+      Number of units: 2^25 
+      range: 0 - (2^25) - 1
+      
+   Support:
+   Integer: possitive, negetive (int)
+   Real number: not support (double)
+   
+   Method for integer: 2's complements
+   Character: by ASCII 2.0
+    
   
 
