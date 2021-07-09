@@ -5,13 +5,12 @@
   Hardware of the PC:
     CPU - 
       Register -
-     
-      Description: Units of memory built in CPU 
-      Size in bits: 32 (4 bytes) 
-      Number of units: 32 
-      Range: 0 - 31 
-      Code name: $ . Ex: Register number 1 = $1
-      Byte Order: Little Endian (reg 31 most Significant) 
+        Description: Units of memory built in CPU 
+        Size in bits: 32 (4 bytes) 
+        Number of units: 32 
+        Range: 0 - 31 
+        Code name: $ . Ex: Register number 1 = $1
+        Byte Order: Little Endian (reg 31 most Significant) 
     
     RAM - 
       Description: Memory slot on the motherboard 
@@ -21,10 +20,29 @@
       
    Support:
    Integer: possitive, negetive (int)
-   Real number: not support (double)
+   Method for negetive integer: 2's complements
+   Character: ASCII
    
-   Method for integer: 2's complements
-   Character: by ASCII 2.0
+   Not Support:
+   Real number (double): Ex: 1.5, 2.3
+   
+   Machine Operation -
+    Description: actions between bits . Ex: 5 + 3 = 8
+    - Operation consist:
+    1. Operator 
+    2. Operand
+    
+    -- We need to coding the Machine Operation --
+    Coding to 32bit (4 byte) 
+    
+    
+    
+    
+    
+    
+    
+    
+    
     
   
 
