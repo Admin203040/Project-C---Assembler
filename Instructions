@@ -42,8 +42,8 @@
     
     Table of the OP:
     
-                          name               Type              OP              funct 
-                        operation          Operation        (decimal)        (decimal)
+                          Name               Type              OP              Funct 
+                        Operation          Operation        (decimal)        (decimal)
                       ___________________________________________________________________
                            add                 R                00               01
                            sub                 R                00               02
@@ -72,6 +72,19 @@
                            la                  J                31
                            call                J                32
                            stop                J                63
+           
+           
+           Noice: operation name always writted with upper case 
+           
+           Type operation:
+           R - 
+           contain only registers (up to 3)
+           
+           
+           
+           
+           
+           recive output files from writing in assembly lang 
            
     
     
