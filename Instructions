@@ -1,4 +1,4 @@
-                                   ----- Create A compiler for assembly in C lang by Daniel K -----                  
+                                   ----- Create A assembler in C lang by Daniel K -----                  
                                                      ---  Instructions ---
 
 
@@ -14,7 +14,7 @@
     
     RAM - 
       Description: Memory slot on the motherboard 
-      Size in bit: 8 bits (1 byte)
+      Size in bits: 8 (1 byte)
       Number of units: 2^25 
       range: 0 - (2^25) - 1
       
@@ -33,10 +33,46 @@
     2. Operand
     
     -- We need to coding the Machine Operation --
-    Coding to 32bit (4 byte) 
+    Description: CPU only understand bits . need to Coding the Machine Operation to 32bit (4 bytes)
+    location: RAM
+    Size in bits: 32 (4 bytes) in row
+    Byte Order: Little Endian (reg 31 most Significant) 
     
+    -- The CPU have A Operation Code (opcode) , and so, he know which operator to use --
     
+    Table of the OP:
     
+                          name               Type              OP              funct 
+                        operation          Operation        (decimal)        (decimal)
+                      ___________________________________________________________________
+                           add                 R                00               01
+                           sub                 R                00               02
+                           and                 R                00               03
+                           or                  R                00               04
+                           nor                 R                00               05
+                           move                R                01               01
+                           mvhi                R                01               02
+                           mvlo                R                01               03
+                           addi                I                10
+                           subi                I                11
+                           andi                I                12
+                           ori                 I                13
+                           nori                I                14 
+                           bne                 I                15
+                           beq                 I                16
+                           blt                 I                17
+                           bgt                 I                18
+                           lb                  I                19
+                           sb                  I                20
+                           lw                  I                21
+                           sw                  I                22
+                           lh                  I                23
+                           sh                  I                24
+                           jmp                 J                30
+                           la                  J                31
+                           call                J                32
+                           stop                J                63
+           
     
     
     
